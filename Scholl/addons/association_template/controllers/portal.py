@@ -87,7 +87,7 @@ class WebsiteForm(http.Controller):
                </div>
                <div class="content">
                    <p>Votre demande a bien été prise en compte. Merci de cliquer sur le lien ci-dessous pour confirmer votre e-mail :</p>
-                   <a class="button" href="/confirmation?token={token}">Lien de confirmation</a>
+                   <a class="button" href="http://38.242.250.114:2222/confirmation?token={token}">Lien de confirmation</a>
                    <p>N’hésitez pas à nous suivre sur les réseaux sociaux :</p>
                    <div class="social-links">
                        <a href="https://www.facebook.com/mymedinaschools">Facebook</a>
