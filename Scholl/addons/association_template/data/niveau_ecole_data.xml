@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data noupdate="1">
+       <record id="niveau1" model="niveau.ecole">
+            <field name="name">Primaire</field>
+        </record>
+       <record id="niveau2" model="niveau.ecole">
+            <field name="name">Secondaire</field>
+        </record>
+   </data>
+</odoo>

@@ -1,0 +1,74 @@
+<odoo>
+    <data>
+        <record id="ecole_almadies" model="ief.ecole">
+            <field name="name">IEF Almadies</field>
+        </record>
+        <record id="ecole_bakel" model="ief.ecole">
+            <field name="name">IEF Bakel</field>
+        </record>
+        <record id="ecole_bambey" model="ief.ecole">
+            <field name="name">IEF Bambey</field>
+        </record>
+        <record id="ecole_bignona_1" model="ief.ecole">
+            <field name="name">IEF Bignona 1</field>
+        </record>
+        <record id="ecole_bignona_2" model="ief.ecole">
+            <field name="name">IEF Bignona 2</field>
+        </record>
+        <record id="ecole_birkelane" model="ief.ecole">
+            <field name="name">IEF Birkelane</field>
+        </record>
+        <record id="ecole_bounkiling" model="ief.ecole">
+            <field name="name">IEF Bounkiling</field>
+        </record>
+        <record id="ecole_dagana" model="ief.ecole">
+            <field name="name">IEF Dagana</field>
+        </record>
+        <record id="ecole_diourbel" model="ief.ecole">
+            <field name="name">IEF Diourbel</field>
+        </record>
+        <record id="ecole_fatick" model="ief.ecole">
+            <field name="name">IEF Fatick</field>
+        </record>
+        <record id="ecole_foundiougne" model="ief.ecole">
+            <field name="name">IEF Foundiougne</field>
+        </record>
+        <record id="ecole_gossas" model="ief.ecole">
+            <field name="name">IEF Gossas</field>
+        </record>
+        <record id="ecole_goudiry" model="ief.ecole">
+            <field name="name">IEF Goudiry</field>
+        </record>
+        <record id="ecole_goudomp" model="ief.ecole">
+            <field name="name">IEF Goudomp</field>
+        </record>
+        <record id="ecole_grand_dakar" model="ief.ecole">
+            <field name="name">IEF Grand Dakar</field>
+        </record>
+        <record id="ecole_guiguineo" model="ief.ecole">
+            <field name="name">IEF Guiguineo</field>
+        </record>
+        <record id="ecole_guediawaye" model="ief.ecole">
+            <field name="name">IEF Guédiawaye</field>
+        </record>
+        <record id="ecole_kaffrine" model="ief.ecole">
+            <field name="name">IEF Kaffrine</field>
+        </record>
+        <record id="ecole_kanel" model="ief.ecole">
+            <field name="name">IEF Kanel</field>
+        </record>
+        <record id="ecole_kaolack_commune" model="ief.ecole">
+            <field name="name">IEF Kaolack Commune</field>
+        </record>
+        <record id="ecole_kaolack_departement" model="ief.ecole">
+            <field name="name">IEF Kaolack-Département</field>
+        </record>
+        <record id="ecole_kedougou" model="ief.ecole">
+            <field name="name">IEF Kedougou</field>
+        </record>
+        <record id="ecole_keur_massar" model="ief.ecole">
+            <field name="name">IEF Keur Massar</field>
+        </record>
+        <!-- Ajouter d'autres écoles ici si nécessaire -->
+    </data>
+</odoo>

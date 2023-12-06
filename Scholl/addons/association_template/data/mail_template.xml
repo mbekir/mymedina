@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <!-- Création du modèle d'e-mail pour la confirmation -->
+        <record id="mail_template_email_confirmation" model="mail.template">
+            <field name="name">Confirmation Email Template</field>
+            <field name="email_from">votre@email.com</field>
+            <field name="subject">Veuillez confirmer votre adresse e-mail</field>
+            <field name="body_html"><![CDATA[
+                <p>Cher(e) ${object.name},</p>
+                <p>Veuillez cliquer sur le lien ci-dessous pour confirmer votre adresse e-mail:</p>
+                <a href="http://localhost:2020/confirmation?token=${object.token}">Confirmer l'E-mail</a>
+            ]]></field>
+        </record>
+    </data>
+</odoo>

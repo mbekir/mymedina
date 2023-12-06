@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data noupdate="1">
+       <record id="fonction1" model="fonction.ecole">
+            <field name="name">Directeur</field>
+        </record>
+       <record id="fonction2" model="fonction.ecole">
+            <field name="name">Maitre</field>
+        </record>
+   </data>
+</odoo>

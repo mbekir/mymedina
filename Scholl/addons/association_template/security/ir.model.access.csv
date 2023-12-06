@@ -1,0 +1,7 @@
+id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
+access_association_template,access_association_template,model_association_template,base.group_user,1,1,1,1
+access_fonction_ecole,access_fonction_ecole,model_fonction_ecole,base.group_user,1,1,1,1
+access_type_ecole,access_type_ecole,model_type_ecole,base.group_user,1,1,1,1
+access_niveau_ecole,access_niveau_ecole,model_niveau_ecole,base.group_user,1,1,1,1
+access_ief_ecole,access_ief_ecole,model_ief_ecole,base.group_user,1,1,1,1
+access_type_besoins,access_type_besoins,model_type_besoins,base.group_user,1,1,1,1

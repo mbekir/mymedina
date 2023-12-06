@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data noupdate="1">
+       <record id="type1" model="type.ecole">
+            <field name="name">Public</field>
+        </record>
+       <record id="type2" model="type.ecole">
+            <field name="name">Privé</field>
+        </record>
+   </data>
+</odoo>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="type_besoins_view_tree" model="ir.ui.view">
+        <field name="name">type.besoins.tree</field>
+        <field name="model">type.besoins</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom"  sample="1">
+                <field name="name" optional="show"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+    <record id="type_besoins_view_search" model="ir.ui.view">
+        <field name="name">type.besoins.search</field>
+        <field name="model">type.besoins</field>
+        <field name="arch" type="xml">
+            <search string="Process Search">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+
+
+
+
+
+
+
+
+    <record id="type_besoins_action" model="ir.actions.act_window">
+        <field name="name">Type de Besoins</field>
+        <field name="res_model">type.besoins</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a new fonction
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem name="Type de Besoins"
+        id="menu_type_besoins_configuration"
+        sequence="1990"
+        action="type_besoins_action"
+        parent="menu_association_configuration"/>
+
+</odoo>

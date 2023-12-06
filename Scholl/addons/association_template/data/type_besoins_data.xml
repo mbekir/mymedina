@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <data noupdate="1">
+       <record id="n1" model="type.besoins">
+            <field name="name">Besoins en fournitures ( cahiers et stylos)</field>
+        </record>
+       <record id="n2" model="type.besoins">
+            <field name="name">Besoins spécifique de l’écoles ( robinet, craies, imprimantes….)</field>
+        </record>
+   </data>
+</odoo>

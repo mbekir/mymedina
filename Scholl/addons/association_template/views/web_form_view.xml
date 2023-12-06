@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="online_appointment_form">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+                    <div class="container">
+                        <form action="/set" method="post" enctype="multipart/form-data" class="o_mark_required needs-validation"
+                              data-mark="*" data-model_name="" data-success-page="" >
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <br/>
+                            <div class="alert alert-success" role="alert">
+                               <center><h5>Un enfant qui réussit, c’est une famille qui réussit</h5></center>
+                            </div>
+
+
+                            <div id="carouselExampleIndicators" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="association_template/static/img/mymedina.jpeg" class="d-block w-100"
+                                             style="height: 420px;" alt="Description de l'image"/>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Grâce à vous</h5>
+                                            <h5>5000 enfants ont reçus leur fournitures.</h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="association_template/static/img/mymedina6.jpg" class="d-block w-100"
+                                             style="height: 420px;" alt="Description de l'image"/>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="association_template/static/img/mymedina5.jpg" class="d-block w-100"
+                                             style="height: 420px;" alt="Description de l'image"/>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                            <br/>
+
+
+                            <p class="mb-3">Informations obligatoires:</p>
+                            <div class="s_website_form_rows row s_col_no_bgcolor mb-3">
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Nom</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="nom" type="text" placeholder="Enter nom"
+                                                   class="form-control s_website_form_input" name="nom" required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Prénom</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="prenom" placeholder="Enter prénom" type="text"
+                                                   class="form-control s_website_form_input"
+                                                   name="prenom" required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Email</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="email" type="text" placeholder="Enter email"
+                                                   class="form-control s_website_form_input" name="email" required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Numéro de téléphone</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+      <!--                                      <select name="country" t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="country or []" t-as="c">
+                                                    <option t-att-value="c.id">
+            <img t-att-src="c.image_url" t-att-alt="c.name" style="width: 16px; height: 16px; margin-right: 5px;"/> <t t-esc="c.phone_code"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+
+
+                                            <input id="phone" type="text" placeholder="Enter numéro de téléphone"
+                                                   class="form-control s_website_form_input" name="tel" required="1"/>-->
+
+                                            <div class="row">
+                                                <div class="col-md-4 col-14 ">
+                                                    <select name="country"
+                                                            t-attf-class="form-control s_website_form_input"
+                                                            required="1">
+                                                        <t t-foreach="country or []" t-as="c">
+                                                            <option t-att-value="c.id">
+                                                                <img t-att-src="c.image_url" t-att-alt="c.name"
+                                                                     style="width: 16px; height: 5px; margin-right: 5px;"/>
+                                                               <t t-esc="c.name"/>
+                                                            </option>
+                                                        </t>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-8 col-8">
+                                                    <input id="phone" type="text"
+                                                           placeholder="Enter numéro de téléphone"
+                                                           class="form-control s_website_form_input" name="tel"
+                                                           required="1"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12 s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Fonction dans l’école</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select name="fonction_id" t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="fonctions or []" t-as="f">
+                                                    <option t-att-value="f.id">
+                                                        <t t-esc="f.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Nom de l’école</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="nom_ecole" placeholder="Enter nom de l’école" type="text"
+                                                   class="form-control s_website_form_input" name="nom_ecole"
+                                                   required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-12 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Adresse de l’école</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="adresse_ecole" placeholder="Enter adresse de l’école" type="text"
+                                                   class="form-control s_website_form_input" name="adresse_ecole"
+                                                   required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Type l’école</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select name="type_ecole_id"
+                                                    t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="type_ecole_ids or []" t-as="t">
+                                                    <option t-att-value="t.id">
+                                                        <t t-esc="t.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Niveau</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select name="niveau_id" t-attf-class="form-control s_website_form_input"
+                                                    required="1" id="niveau_select">
+                                                <t t-foreach="niveau_ids or []" t-as="t">
+                                                    <option t-att-value="t.id">
+                                                        <t t-esc="t.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Effectif</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="effectif" placeholder="Enter effectif" type="number"
+                                                   class="form-control s_website_form_input" name="effectif"
+                                                   required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">IEF</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select name="ief_id" t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="ief_ids or []" t-as="t">
+                                                    <option t-att-value="t.id">
+                                                        <t t-esc="t.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Date de la demande</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="date_de_la_demande" type="date"
+                                                   class="form-control s_website_form_input"
+                                                   name="date_de_la_demande" required="1"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Type de besoins</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <select name="type_de_besoins_id"
+                                                    t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="type_besoins_ids or []" t-as="t">
+                                                    <option t-att-value="t.id">
+                                                        <t t-esc="t.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-md-12 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Description du besoin</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <textarea class="form-control" id="description_du_besoin"
+                                                      name="description_du_besoin" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="mb-3">Information non obligatoires:</p>
+                                <div id="div_option_1">
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
+                                         data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="studio1">
+                                                <span class="s_website_form_label_content">Pourcentage CFEE %</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input id="pourcentage" placeholder="Dernier pourcentage de réussite au CFEE de l’école" type="number"
+                                                       class="form-control s_website_form_input"
+                                                       name="pourcentage_CFEE"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="div_option_2" style="display: none;">
+                                        <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
+                                         data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="studio1">
+                                                <span class="s_website_form_label_content">Pourcentage CFEE %</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input id="pourcentage_BAC" placeholder="Dernier pourcentage de réussite BAC  de l’école" type="number"
+                                                       class="form-control s_website_form_input"
+                                                       name="pourcentage_BAC"/>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                        <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
+                                         data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label class="col-form-label col-sm-auto s_website_form_label"
+                                                   style="width: 200px" for="studio1">
+                                                <span class="s_website_form_label_content">Pourcentage BFEM %</span>
+                                            </label>
+                                            <div class="col-sm">
+                                                <input id="pourcentage_BFEM" placeholder="Dernier pourcentage de réussite au BFEM de l’école" type="number"
+                                                       class="form-control s_website_form_input"
+                                                       name="pourcentage_BFEM"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group col-12 s_website_form_submit d-flex justify-content-end"
+                                     data-name="Submit Button">
+                                    <div style="width: 200px;" class="s_website_form_label"/>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">Sauvegarder
+                                    </button>
+                                </div>
+
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Confirmer que les informations saisies sont correctes
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                                    Fermer
+                                                </button>
+                                                <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </t>
+<script>
+  document.getElementById('date_de_la_demande').valueAsDate = new Date();
+    var niveauSelect = document.getElementById('niveau_select');
+    var divOption1 = document.getElementById('div_option_1');
+    var divOption2 = document.getElementById('div_option_2');
+
+    niveauSelect.addEventListener('change', function () {
+        if (niveauSelect.value === '1') {
+            divOption1.style.display = 'block';
+            divOption2.style.display = 'none';
+        } else if (niveauSelect.value === '2') {
+            divOption1.style.display = 'none';
+            divOption2.style.display = 'block';
+        } else {
+            divOption1.style.display = 'none';
+            divOption2.style.display = 'none';
+        }
+    });
+</script>
+    </template>
+
+
+    <template id="thank" name="thank">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <div class="container" style='padding:30px'>
+                    <div class="alert alert-success" role="alert">
+                        Nous vous remercions pour votre demande, qui a été correctement enregistrée.
+                        Pourriez-vous s'il vous plaît confirmer cette demande en consultant votre boîte mail ?
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+    <template id="confirmation" name="confirmation">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <div class="container" style='padding:30px'>
+                    <div class="alert alert-success" role="alert">
+                        Nous sommes heureux de vous informer que votre adresse e-mail a été confirmée avec succès.
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+    <template id="invalide_confirmation" name="invalide_confirmation">
+        <t t-call="website.layout">
+            <div class="oe_structure">
+                <div class="container" style='padding:30px'>
+                    <div class="alert alert-danger" role="alert">
+                        Votre adresse e-mail semble être invalide et ne peut donc pas être confirmée.
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+</odoo>
