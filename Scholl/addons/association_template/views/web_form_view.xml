@@ -14,7 +14,7 @@
                             </div>
 
 
-                            <div id="carouselExampleIndicators" class="carousel slide">
+                            <!--<div id="carouselExampleIndicators" class="carousel slide">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleIndicators"
                                             data-bs-slide-to="0" class="active" aria-current="true"
@@ -52,6 +52,24 @@
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
                                 </button>
+                            </div>-->
+
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="association_template/static/img/mymedina.jpeg" class="img-fluid rounded-start" alt="mymedinaschool"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">My Medina Schools</h5>
+                                            <p class="card-text">Notre éducation, Notre droit au savoir.</p>
+                                            <p class="card-text">Grace à vous 5000 enfants ont reçu leur fournitures.</p>
+                                            <p class="card-text">
+                                                <small class="text-body-secondary">merci pour ma bourse de parrainage</small>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <br/>
@@ -356,7 +374,7 @@
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
                                                    style="width: 200px" for="studio1">
-                                                <span class="s_website_form_label_content">Pourcentage CFEE %</span>
+                                                <span class="s_website_form_label_content">dernier pourcentage de réussite CFEE %</span>
                                             </label>
                                             <div class="col-sm">
                                                 <input id="pourcentage" placeholder="Dernier pourcentage de réussite au CFEE de l’école" type="number"
@@ -373,7 +391,7 @@
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
                                                    style="width: 200px" for="studio1">
-                                                <span class="s_website_form_label_content">Pourcentage CFEE %</span>
+                                                <span class="s_website_form_label_content">dernier pourcentage de réussite BAC %</span>
                                             </label>
                                             <div class="col-sm">
                                                 <input id="pourcentage_BAC" placeholder="Dernier pourcentage de réussite BAC  de l’école" type="number"
@@ -388,7 +406,7 @@
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
                                                    style="width: 200px" for="studio1">
-                                                <span class="s_website_form_label_content">Pourcentage BFEM %</span>
+                                                <span class="s_website_form_label_content">dernier pourcentage de réussite BFEM %</span>
                                             </label>
                                             <div class="col-sm">
                                                 <input id="pourcentage_BFEM" placeholder="Dernier pourcentage de réussite au BFEM de l’école" type="number"

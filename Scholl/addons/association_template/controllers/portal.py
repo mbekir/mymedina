@@ -14,6 +14,10 @@ class WebsiteForm(http.Controller):
        type_besoins_ids = request.env['type.besoins'].sudo().search([])
        ief_ids = request.env['ief.ecole'].sudo().search([])
        country = request.env['res.country'].sudo().search([], order='name')
+       senegal = country.filtered(lambda c: c.id == 204)
+       if senegal:
+           country -= senegal
+           country = senegal + country
        values = {}
        values.update({
            'fonctions': fonctions,
