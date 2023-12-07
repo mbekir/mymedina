@@ -147,7 +147,7 @@
                                                                                          class="form-control s_website_form_input" name="tel" required="1"/>-->
 
                                             <div class="row">
-                                                <div class="col-md-4 col-4 ">
+                                                <div class="col-md-6 col-6 ">
                                                     <select name="country"
                                                             t-attf-class="form-control s_website_form_input"
                                                             required="1">
@@ -160,7 +160,7 @@
                                                         </t>
                                                     </select>
                                                 </div>
-                                                <div class="col-md-8 col-8">
+                                                <div class="col-md-6 col-6">
                                                     <input id="phone" type="text"
                                                            placeholder="Enter numéro de téléphone"
                                                            class="form-control s_website_form_input" name="tel"
@@ -400,11 +400,14 @@
                                                 </span>
                                             </label>
                                             <div class="col-sm">
-                                                <input id="pourcentage"
-                                                       placeholder="Dernier pourcentage de réussite au CFEE de l’école"
-                                                       type="text" value="23.75%" maxlength="6"
-                                                       class="form-control s_website_form_input percent"
-                                                       name="pourcentage_CFEE"/>
+
+                                                <div class="input-group">
+                                                    <input type="number" name="pourcentage_CFEE"
+                                                           class="form-control s_website_form_input"
+                                                           placeholder="Dernier pourcentage de réussite au CFEE de l’école"/>
+                                                    <span class="input-group-text">%</span>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -421,11 +424,14 @@
                                                 </span>
                                             </label>
                                             <div class="col-sm">
-                                                <input id="pourcentage_BAC"
-                                                       placeholder="Dernier pourcentage de réussite BAC  de l’école"
-                                                       type="number"
-                                                       class="form-control s_website_form_input"
-                                                       name="pourcentage_BAC"/>
+
+                                                   <div class="input-group">
+                                                    <input type="number" name="pourcentage_BAC"
+                                                           class="form-control s_website_form_input"
+                                                           placeholder="Dernier pourcentage de réussite BAC  de l’école"/>
+                                                    <span class="input-group-text">%</span>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -440,11 +446,15 @@
                                                 </span>
                                             </label>
                                             <div class="col-sm">
-                                                <input id="pourcentage_BFEM"
-                                                       placeholder="Dernier pourcentage de réussite au BFEM de l’école"
-                                                       type="number"
-                                                       class="form-control s_website_form_input"
-                                                       name="pourcentage_BFEM"/>
+
+
+                                                <div class="input-group">
+                                                    <input type="number" name="pourcentage_BFEM"
+                                                           class="form-control s_website_form_input"
+                                                           placeholder="Dernier pourcentage de réussite au BFEM de l’école"/>
+                                                    <span class="input-group-text">%</span>
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
