@@ -7,5 +7,8 @@
        <record id="fonction2" model="fonction.ecole">
             <field name="name">Maitre</field>
         </record>
+       <record id="fonction3" model="fonction.ecole">
+            <field name="name">Membre du CGE</field>
+        </record>
    </data>
 </odoo>

@@ -155,7 +155,7 @@
                                                             <option t-att-value="c.id">
                                                                 <img t-att-src="c.image_url" t-att-alt="c.name"
                                                                      style="width: 16px; height: 5px; margin-right: 5px;"/>
-                                                                <t t-esc="c.name"/>
+                                                                <t t-esc="c.name"/>(+<t t-esc="c.phone_code"/>)
                                                             </option>
                                                         </t>
                                                     </select>
@@ -402,8 +402,8 @@
                                             <div class="col-sm">
                                                 <input id="pourcentage"
                                                        placeholder="Dernier pourcentage de réussite au CFEE de l’école"
-                                                       type="number"
-                                                       class="form-control s_website_form_input"
+                                                       type="text" value="23.75%" maxlength="6"
+                                                       class="form-control s_website_form_input percent"
                                                        name="pourcentage_CFEE"/>
                                             </div>
                                         </div>
@@ -508,6 +508,38 @@
             divOption2.style.display = 'none';
             }
             });
+
+            document.querySelector('.percent').addEventListener('input', function(e) {
+  let int = e.target.value.slice(0, e.target.value.length - 1);
+
+  if (int.includes('%')) {
+    e.target.value = '%';
+  } else if(int == '100'){
+    e.target.value = int + '%';
+    e.target.setSelectionRange(3, 3);
+  } else if (int.length >= 3 && int.length <= 4 && !int.includes('.')) {
+    e.target.value = int.slice(0, 2) + '.' + int.slice(2, 3) + '%';
+    e.target.setSelectionRange(4, 4);
+  } else if (int.length >= 5 & int.length <= 6) {
+    let whole = int.slice(0, 2);
+    let fraction = int.slice(3, 5);
+    e.target.value = whole + '.' + fraction + '%';
+  } else {
+    e.target.value = int + '%';
+    e.target.setSelectionRange(e.target.value.length - 1, e.target.value.length - 1);
+  }
+  console.log('For robots: ' + getInt(e.target.value));
+});
+
+function getInt(val) {
+  let v = parseFloat(val);
+  if (v % 1 === 0) {
+    return v;
+  } else {
+    let n = v.toString().split('.').join('');
+    return parseInt(n);
+  }
+}
         </script>
     </template>
 
