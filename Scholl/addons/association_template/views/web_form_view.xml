@@ -402,7 +402,7 @@
                                             <div class="col-sm">
 
                                                 <div class="input-group">
-                                                    <input type="number" name="pourcentage_CFEE"
+                                                    <input type="text" name="pourcentage_CFEE"
                                                            class="form-control s_website_form_input"
                                                            placeholder="Dernier pourcentage de réussite au CFEE de l’école"/>
                                                     <span class="input-group-text">%</span>
@@ -426,7 +426,7 @@
                                             <div class="col-sm">
 
                                                    <div class="input-group">
-                                                    <input type="number" name="pourcentage_BAC"
+                                                    <input type="text" name="pourcentage_BAC"
                                                            class="form-control s_website_form_input"
                                                            placeholder="Dernier pourcentage de réussite BAC  de l’école"/>
                                                     <span class="input-group-text">%</span>
@@ -449,7 +449,7 @@
 
 
                                                 <div class="input-group">
-                                                    <input type="number" name="pourcentage_BFEM"
+                                                    <input type="text" name="pourcentage_BFEM"
                                                            class="form-control s_website_form_input"
                                                            placeholder="Dernier pourcentage de réussite au BFEM de l’école"/>
                                                     <span class="input-group-text">%</span>

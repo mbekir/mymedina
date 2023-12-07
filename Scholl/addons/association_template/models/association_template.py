@@ -29,9 +29,9 @@ class AssociationTemplate(models.Model):
     date_de_la_demande = fields.Date(default=lambda self: fields.Date.today())
     type_de_besoins_id = fields.Many2one('type.besoins')
     description_du_besoin = fields.Text()
-    pourcentage_CFEE = fields.Float(string='Dernier pourcentage de réussite au CFEE de l’école')
-    pourcentage_BAC = fields.Float(string='Dernier pourcentage de réussite BAC  de l’école')
-    pourcentage_BFEM = fields.Float(string='Dernier pourcentage de réussite au BFEM de l’école')
+    pourcentage_CFEE = fields.Char(string='Dernier pourcentage de réussite au CFEE de l’école')
+    pourcentage_BAC = fields.Char(string='Dernier pourcentage de réussite BAC  de l’école')
+    pourcentage_BFEM = fields.Char(string='Dernier pourcentage de réussite au BFEM de l’école')
     country = fields.Many2one('res.country', string="Country")
     country_code = fields.Integer(related="country.phone_code")
 
