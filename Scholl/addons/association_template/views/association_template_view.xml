@@ -20,6 +20,7 @@
                 <field name="type_ecole_id" optional="show"/>
                 <field name="niveau_id" optional="show"/>
                 <field name="effectif" optional="show"/>
+                <field name="ia_id" optional="show"/>
                 <field name="ief_id" optional="show"/>
                 <field name="date_de_la_demande" optional="show"/>
                 <field name="type_de_besoins_id" optional="show"/>
@@ -60,6 +61,7 @@
                             <field name="email"/>
                             <field name="nom_ecole"/>
                             <field name="niveau_id"/>
+                            <field name="ia_id"/>
                             <field name="ief_id"/>
                             <field name="type_de_besoins_id"/>
                         </group>

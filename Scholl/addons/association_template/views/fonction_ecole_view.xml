@@ -33,7 +33,7 @@
 
 
     <record id="fonction_ecole_action" model="ir.actions.act_window">
-        <field name="name">fonction ecole</field>
+        <field name="name">Fonction</field>
         <field name="res_model">fonction.ecole</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">

@@ -5,12 +5,15 @@
             <div id="wrap" class="oe_structure oe_empty">
                 <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
                     <div class="container">
-                        <form action="/set" method="post" enctype="multipart/form-data" class="o_mark_required needs-validation"
-                              data-mark="*" data-model_name="" data-success-page="" >
+                        <form action="/set" method="post" enctype="multipart/form-data"
+                              class="o_mark_required needs-validation"
+                              data-mark="*" data-model_name="" data-success-page="">
                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                             <br/>
                             <div class="alert alert-success" role="alert">
-                               <center><h5>Un enfant qui réussit, c’est une famille qui réussit</h5></center>
+                                <center>
+                                    <h5>Un enfant qui réussit, c’est une famille qui réussit</h5>
+                                </center>
                             </div>
 
 
@@ -57,16 +60,12 @@
                             <div class="card mb-3">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="association_template/static/img/mymedina.jpeg" class="img-fluid rounded-start" alt="mymedinaschool"/>
+                                        <img src="association_template/static/img/mymedina.jpeg"
+                                             class="img-fluid rounded-start" alt="mymedinaschool"/>
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h5 class="card-title">My Medina Schools</h5>
-                                            <p class="card-text">Notre éducation, Notre droit au savoir.</p>
-                                            <p class="card-text">Grace à vous 5000 enfants ont reçu leur fournitures.</p>
-                                            <p class="card-text">
-                                                <small class="text-body-secondary">merci pour ma bourse de parrainage</small>
-                                            </p>
+                                            <h5 class="card-title">MMS AFRICA KIDS</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -134,18 +133,18 @@
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-      <!--                                      <select name="country" t-attf-class="form-control s_website_form_input"
-                                                    required="1">
-                                                <t t-foreach="country or []" t-as="c">
-                                                    <option t-att-value="c.id">
-            <img t-att-src="c.image_url" t-att-alt="c.name" style="width: 16px; height: 16px; margin-right: 5px;"/> <t t-esc="c.phone_code"/>
-                                                    </option>
-                                                </t>
-                                            </select>
+                                            <!--                                      <select name="country" t-attf-class="form-control s_website_form_input"
+                                                                                          required="1">
+                                                                                      <t t-foreach="country or []" t-as="c">
+                                                                                          <option t-att-value="c.id">
+                                                  <img t-att-src="c.image_url" t-att-alt="c.name" style="width: 16px; height: 16px; margin-right: 5px;"/> <t t-esc="c.phone_code"/>
+                                                                                          </option>
+                                                                                      </t>
+                                                                                  </select>
 
 
-                                            <input id="phone" type="text" placeholder="Enter numéro de téléphone"
-                                                   class="form-control s_website_form_input" name="tel" required="1"/>-->
+                                                                                  <input id="phone" type="text" placeholder="Enter numéro de téléphone"
+                                                                                         class="form-control s_website_form_input" name="tel" required="1"/>-->
 
                                             <div class="row">
                                                 <div class="col-md-4 col-4 ">
@@ -156,7 +155,7 @@
                                                             <option t-att-value="c.id">
                                                                 <img t-att-src="c.image_url" t-att-alt="c.name"
                                                                      style="width: 16px; height: 5px; margin-right: 5px;"/>
-                                                               <t t-esc="c.name"/>
+                                                                <t t-esc="c.name"/>
                                                             </option>
                                                         </t>
                                                     </select>
@@ -273,18 +272,24 @@
                                     </div>
                                 </div>
 
+
                                 <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
                                      data-type="char" data-name="Field">
                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                style="width: 200px" for="studio1">
-                                            <span class="s_website_form_label_content">Effectif</span>
+                                            <span class="s_website_form_label_content">IA</span>
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-                                            <input id="effectif" placeholder="Enter effectif" type="number"
-                                                   class="form-control s_website_form_input" name="effectif"
-                                                   required="1"/>
+                                            <select name="ia_id" t-attf-class="form-control s_website_form_input"
+                                                    required="1">
+                                                <t t-foreach="ia_ids or []" t-as="t">
+                                                    <option t-att-value="t.id">
+                                                        <t t-esc="t.name"/>
+                                                    </option>
+                                                </t>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
@@ -307,6 +312,22 @@
                                                     </option>
                                                 </t>
                                             </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
+                                     data-type="char" data-name="Field">
+                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                               style="width: 200px" for="studio1">
+                                            <span class="s_website_form_label_content">Effectif</span>
+                                            <span class="s_website_form_mark">*</span>
+                                        </label>
+                                        <div class="col-sm">
+                                            <input id="effectif" placeholder="Enter effectif" type="number"
+                                                   class="form-control s_website_form_input" name="effectif"
+                                                   required="1"/>
                                         </div>
                                     </div>
                                 </div>
@@ -352,7 +373,7 @@
                                 </div>
 
 
-                                <div class="form-group col-md-12 col-12  s_website_form_field s_website_form_required mb-3"
+                                <div class="form-group col-md-6 col-12  s_website_form_field s_website_form_required mb-3"
                                      data-type="char" data-name="Field">
                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                         <label class="col-form-label col-sm-auto s_website_form_label"
@@ -374,10 +395,14 @@
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
                                                    style="width: 200px" for="studio1">
-                                                <span class="s_website_form_label_content">dernier pourcentage de réussite CFEE %</span>
+                                                <span class="s_website_form_label_content">Dernier pourcentage de
+                                                    réussite CFEE %
+                                                </span>
                                             </label>
                                             <div class="col-sm">
-                                                <input id="pourcentage" placeholder="Dernier pourcentage de réussite au CFEE de l’école" type="number"
+                                                <input id="pourcentage"
+                                                       placeholder="Dernier pourcentage de réussite au CFEE de l’école"
+                                                       type="number"
                                                        class="form-control s_website_form_input"
                                                        name="pourcentage_CFEE"/>
                                             </div>
@@ -386,30 +411,38 @@
                                 </div>
 
                                 <div id="div_option_2" style="display: none;">
-                                        <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
                                          data-type="char" data-name="Field">
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
                                                    style="width: 200px" for="studio1">
-                                                <span class="s_website_form_label_content">dernier pourcentage de réussite BAC %</span>
+                                                <span class="s_website_form_label_content">Dernier pourcentage de
+                                                    réussite CFEE %
+                                                </span>
                                             </label>
                                             <div class="col-sm">
-                                                <input id="pourcentage_BAC" placeholder="Dernier pourcentage de réussite BAC  de l’école" type="number"
+                                                <input id="pourcentage_BAC"
+                                                       placeholder="Dernier pourcentage de réussite BAC  de l’école"
+                                                       type="number"
                                                        class="form-control s_website_form_input"
                                                        name="pourcentage_BAC"/>
                                             </div>
                                         </div>
                                     </div>
 
-                                        <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
+                                    <div class="form-group col-12 s_website_form_field s_website_form_required mb-3"
                                          data-type="char" data-name="Field">
                                         <div class="row s_col_no_resize s_col_no_bgcolor">
                                             <label class="col-form-label col-sm-auto s_website_form_label"
                                                    style="width: 200px" for="studio1">
-                                                <span class="s_website_form_label_content">dernier pourcentage de réussite BFEM %</span>
+                                                <span class="s_website_form_label_content">Dernier pourcentage de
+                                                    réussite BFEM %
+                                                </span>
                                             </label>
                                             <div class="col-sm">
-                                                <input id="pourcentage_BFEM" placeholder="Dernier pourcentage de réussite au BFEM de l’école" type="number"
+                                                <input id="pourcentage_BFEM"
+                                                       placeholder="Dernier pourcentage de réussite au BFEM de l’école"
+                                                       type="number"
                                                        class="form-control s_website_form_input"
                                                        name="pourcentage_BFEM"/>
                                             </div>
@@ -457,25 +490,25 @@
                 </section>
             </div>
         </t>
-<script>
-  document.getElementById('date_de_la_demande').valueAsDate = new Date();
-    var niveauSelect = document.getElementById('niveau_select');
-    var divOption1 = document.getElementById('div_option_1');
-    var divOption2 = document.getElementById('div_option_2');
+        <script>
+            document.getElementById('date_de_la_demande').valueAsDate = new Date();
+            var niveauSelect = document.getElementById('niveau_select');
+            var divOption1 = document.getElementById('div_option_1');
+            var divOption2 = document.getElementById('div_option_2');
 
-    niveauSelect.addEventListener('change', function () {
-        if (niveauSelect.value === '1') {
+            niveauSelect.addEventListener('change', function () {
+            if (niveauSelect.value === '1') {
             divOption1.style.display = 'block';
             divOption2.style.display = 'none';
-        } else if (niveauSelect.value === '2') {
+            } else if (niveauSelect.value === '2') {
             divOption1.style.display = 'none';
             divOption2.style.display = 'block';
-        } else {
+            } else {
             divOption1.style.display = 'none';
             divOption2.style.display = 'none';
-        }
-    });
-</script>
+            }
+            });
+        </script>
     </template>
 
 

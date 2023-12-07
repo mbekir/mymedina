@@ -23,8 +23,9 @@ class AssociationTemplate(models.Model):
     type_ecole_id = fields.Many2one('type.ecole', string='Type d’école')
 
     niveau_id = fields.Many2one('niveau.ecole')
-    effectif= fields.Integer()
-    ief_id = fields.Many2one('ief.ecole',string="IEF")
+    effectif = fields.Integer()
+    ief_id = fields.Many2one('ief.ecole', string="IEF")
+    ia_id = fields.Many2one('inspection.academie', string="IA")
     date_de_la_demande = fields.Date(default=lambda self: fields.Date.today())
     type_de_besoins_id = fields.Many2one('type.besoins')
     description_du_besoin = fields.Text()

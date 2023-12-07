@@ -1,0 +1,52 @@
+<odoo>
+    <data>
+        <record id="academy_dakar" model="inspection.academie">
+            <field name="name">DAKAR</field>
+        </record>
+        <record id="academy_saint_louis" model="inspection.academie">
+            <field name="name">SAINT-LOUIS</field>
+        </record>
+        <record id="academy_fatick" model="inspection.academie">
+            <field name="name">FATICK</field>
+        </record>
+        <record id="academy_kolda" model="inspection.academie">
+            <field name="name">KOLDA</field>
+        </record>
+        <record id="academy_ziguinchor" model="inspection.academie">
+            <field name="name">ZIGUINCHOR</field>
+        </record>
+        <record id="academy_tambacounda" model="inspection.academie">
+            <field name="name">TAMBACOUNDA</field>
+        </record>
+        <record id="academy_louga" model="inspection.academie">
+            <field name="name">LOUGA</field>
+        </record>
+        <record id="academy_matam" model="inspection.academie">
+            <field name="name">MATAM</field>
+        </record>
+        <record id="academy_sedhiou" model="inspection.academie">
+            <field name="name">SEDHIOU</field>
+        </record>
+        <record id="academy_kaffrine" model="inspection.academie">
+            <field name="name">KAFFRINE</field>
+        </record>
+        <record id="academy_kaolack" model="inspection.academie">
+            <field name="name">KAOLACK</field>
+        </record>
+        <record id="academy_diourbel" model="inspection.academie">
+            <field name="name">DIOURBEL</field>
+        </record>
+        <record id="academy_kedougou" model="inspection.academie">
+            <field name="name">KEDOUGOU</field>
+        </record>
+        <record id="academy_thies" model="inspection.academie">
+            <field name="name">THIES</field>
+        </record>
+        <record id="academy_pikine_guediawaye" model="inspection.academie">
+            <field name="name">PIKINE-GUEDIAWAYE</field>
+        </record>
+        <record id="academy_rufisque" model="inspection.academie">
+            <field name="name">RUFISQUE</field>
+        </record>
+    </data>
+</odoo>

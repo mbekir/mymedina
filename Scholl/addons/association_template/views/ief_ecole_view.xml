@@ -33,7 +33,7 @@
 
 
     <record id="ief_ecole_action" model="ir.actions.act_window">
-        <field name="name">ief ecole</field>
+        <field name="name">IEF</field>
         <field name="res_model">ief.ecole</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">

@@ -13,6 +13,7 @@ class WebsiteForm(http.Controller):
        niveau_ids = request.env['niveau.ecole'].sudo().search([])
        type_besoins_ids = request.env['type.besoins'].sudo().search([])
        ief_ids = request.env['ief.ecole'].sudo().search([])
+       ia_ids = request.env['inspection.academie'].sudo().search([])
        country = request.env['res.country'].sudo().search([], order='name')
        senegal = country.filtered(lambda c: c.id == 204)
        if senegal:
@@ -25,7 +26,8 @@ class WebsiteForm(http.Controller):
            'niveau_ids': niveau_ids,
            'type_besoins_ids': type_besoins_ids,
            'ief_ids': ief_ids,
-           'country': country
+           'country': country,
+           'ia_ids': ia_ids
        })
        return request.render("association_template.online_appointment_form", values)
 
