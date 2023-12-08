@@ -1,74 +1,228 @@
 <odoo>
     <data>
-        <record id="ecole_almadies" model="ief.ecole">
+        <record id="ief_almadies" model="ief.ecole">
             <field name="name">IEF Almadies</field>
         </record>
-        <record id="ecole_bakel" model="ief.ecole">
+
+        <record id="ief_bakel" model="ief.ecole">
             <field name="name">IEF Bakel</field>
         </record>
-        <record id="ecole_bambey" model="ief.ecole">
+
+        <record id="ief_bambey" model="ief.ecole">
             <field name="name">IEF Bambey</field>
         </record>
-        <record id="ecole_bignona_1" model="ief.ecole">
+
+        <record id="ief_bignona_1" model="ief.ecole">
             <field name="name">IEF Bignona 1</field>
         </record>
-        <record id="ecole_bignona_2" model="ief.ecole">
+
+        <record id="ief_bignona_2" model="ief.ecole">
             <field name="name">IEF Bignona 2</field>
         </record>
-        <record id="ecole_birkelane" model="ief.ecole">
+
+        <record id="ief_birkelane" model="ief.ecole">
             <field name="name">IEF Birkelane</field>
         </record>
-        <record id="ecole_bounkiling" model="ief.ecole">
+
+        <record id="ief_bounkiling" model="ief.ecole">
             <field name="name">IEF Bounkiling</field>
         </record>
-        <record id="ecole_dagana" model="ief.ecole">
+
+        <record id="ief_dagana" model="ief.ecole">
             <field name="name">IEF Dagana</field>
         </record>
-        <record id="ecole_diourbel" model="ief.ecole">
+
+        <record id="ief_dakar_plateau" model="ief.ecole">
+            <field name="name">IEF Dakar Plateau</field>
+        </record>
+
+        <record id="ief_diourbel" model="ief.ecole">
             <field name="name">IEF Diourbel</field>
         </record>
-        <record id="ecole_fatick" model="ief.ecole">
+
+        <record id="ief_fatick" model="ief.ecole">
             <field name="name">IEF Fatick</field>
         </record>
-        <record id="ecole_foundiougne" model="ief.ecole">
+
+        <record id="ief_foundiougne" model="ief.ecole">
             <field name="name">IEF Foundiougne</field>
         </record>
-        <record id="ecole_gossas" model="ief.ecole">
+
+        <record id="ief_gossas" model="ief.ecole">
             <field name="name">IEF Gossas</field>
         </record>
-        <record id="ecole_goudiry" model="ief.ecole">
+
+        <record id="ief_goudiry" model="ief.ecole">
             <field name="name">IEF Goudiry</field>
         </record>
-        <record id="ecole_goudomp" model="ief.ecole">
+
+        <record id="ief_goudomp" model="ief.ecole">
             <field name="name">IEF Goudomp</field>
         </record>
-        <record id="ecole_grand_dakar" model="ief.ecole">
+
+        <record id="ief_grand_dakar" model="ief.ecole">
             <field name="name">IEF Grand Dakar</field>
         </record>
-        <record id="ecole_guiguineo" model="ief.ecole">
+
+        <record id="ief_guiguineo" model="ief.ecole">
             <field name="name">IEF Guiguineo</field>
         </record>
-        <record id="ecole_guediawaye" model="ief.ecole">
+
+        <record id="ief_guediawaye" model="ief.ecole">
             <field name="name">IEF Guédiawaye</field>
         </record>
-        <record id="ecole_kaffrine" model="ief.ecole">
+
+        <record id="ief_kaffrine" model="ief.ecole">
             <field name="name">IEF Kaffrine</field>
         </record>
-        <record id="ecole_kanel" model="ief.ecole">
+
+        <record id="ief_kanel" model="ief.ecole">
             <field name="name">IEF Kanel</field>
         </record>
-        <record id="ecole_kaolack_commune" model="ief.ecole">
+
+        <record id="ief_kaolack_commune" model="ief.ecole">
             <field name="name">IEF Kaolack Commune</field>
         </record>
-        <record id="ecole_kaolack_departement" model="ief.ecole">
+
+        <record id="ief_kaolack_departement" model="ief.ecole">
             <field name="name">IEF Kaolack-Département</field>
         </record>
-        <record id="ecole_kedougou" model="ief.ecole">
+
+        <record id="ief_kedougou" model="ief.ecole">
             <field name="name">IEF Kedougou</field>
         </record>
-        <record id="ecole_keur_massar" model="ief.ecole">
+
+        <record id="ief_keur_massar" model="ief.ecole">
             <field name="name">IEF Keur Massar</field>
         </record>
-        <!-- Ajouter d'autres écoles ici si nécessaire -->
+
+        <record id="ief_kolda" model="ief.ecole">
+            <field name="name">IEF Kolda</field>
+        </record>
+
+        <record id="ief_koumpentoum" model="ief.ecole">
+            <field name="name">IEF Koumpentoum</field>
+        </record>
+
+        <record id="ief_koungheul" model="ief.ecole">
+            <field name="name">IEF Koungheul</field>
+        </record>
+
+        <record id="ief_kebemer" model="ief.ecole">
+            <field name="name">IEF Kébémer</field>
+        </record>
+
+        <record id="ief_linguere" model="ief.ecole">
+            <field name="name">IEF Linguere</field>
+        </record>
+
+        <record id="ief_louga" model="ief.ecole">
+            <field name="name">IEF Louga</field>
+        </record>
+
+        <record id="ief_malem_hoddar" model="ief.ecole">
+            <field name="name">IEF Malem Hoddar</field>
+        </record>
+
+        <record id="ief_matam" model="ief.ecole">
+            <field name="name">IEF Matam</field>
+        </record>
+
+        <record id="ief_mbacke" model="ief.ecole">
+            <field name="name">IEF Mbacké</field>
+        </record>
+
+        <record id="ief_mbour_1" model="ief.ecole">
+            <field name="name">IEF Mbour 1</field>
+        </record>
+
+        <record id="ief_mbour_2" model="ief.ecole">
+            <field name="name">IEF Mbour 2</field>
+        </record>
+
+        <record id="ief_medina_yoro_foulah" model="ief.ecole">
+            <field name="name">IEF Medina Yoro Foulah</field>
+        </record>
+
+        <record id="ief_nioro" model="ief.ecole">
+            <field name="name">IEF Nioro</field>
+        </record>
+
+        <record id="ief_oussouye" model="ief.ecole">
+            <field name="name">IEF Oussouye</field>
+        </record>
+
+        <record id="ief_parcelles_assainies" model="ief.ecole">
+            <field name="name">IEF Parcelles Assainies</field>
+        </record>
+
+        <record id="ief_pikine" model="ief.ecole">
+            <field name="name">IEF Pikine</field>
+        </record>
+
+        <record id="ief_podor" model="ief.ecole">
+            <field name="name">IEF Podor</field>
+        </record>
+
+        <record id="ief_ranerou" model="ief.ecole">
+            <field name="name">IEF Ranerou</field>
+        </record>
+
+        <record id="ief_rufisque_commune" model="ief.ecole">
+            <field name="name">IEF Rufisque Commune</field>
+        </record>
+
+        <record id="ief_rufisque_departement" model="ief.ecole">
+            <field name="name">IEF Rufisque Departement</field>
+        </record>
+
+        <record id="ief_salemata" model="ief.ecole">
+            <field name="name">IEF Salemata</field>
+        </record>
+
+        <record id="ief_saraya" model="ief.ecole">
+            <field name="name">IEF Saraya</field>
+        </record>
+
+        <record id="ief_sedhiou" model="ief.ecole">
+            <field name="name">IEF Sedhiou</field>
+        </record>
+
+        <record id="ief_st_louis_commune" model="ief.ecole">
+            <field name="name">IEF St Louis Commune</field>
+        </record>
+
+        <record id="ief_st_louis_departement" model="ief.ecole">
+            <field name="name">IEF St Louis Département</field>
+        </record>
+
+        <record id="ief_tamba" model="ief.ecole">
+            <field name="name">IEF Tamba</field>
+        </record>
+
+        <record id="ief_thiaroye" model="ief.ecole">
+            <field name="name">IEF Thiaroye</field>
+        </record>
+
+        <record id="ief_thies_commune" model="ief.ecole">
+            <field name="name">IEF Thies Commune</field>
+        </record>
+
+        <record id="ief_thies_departement" model="ief.ecole">
+            <field name="name">IEF Thiès Département</field>
+        </record>
+
+        <record id="ief_tivaouane" model="ief.ecole">
+            <field name="name">IEF Tivaouane</field>
+        </record>
+
+        <record id="ief_velingara" model="ief.ecole">
+            <field name="name">IEF Velingara</field>
+        </record>
+
+        <record id="ief_ziguinchor" model="ief.ecole">
+            <field name="name">IEF Ziguinchor</field>
+        </record>
+
     </data>
 </odoo>
