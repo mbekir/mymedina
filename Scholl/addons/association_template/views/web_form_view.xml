@@ -149,7 +149,7 @@
                                             <div class="row">
                                                 <div class="col-md-6 col-6 ">
                                                     <select name="country"
-                                                            t-attf-class="form-control s_website_form_input"
+                                                            t-attf-class="form-select s_website_form_input"
                                                             required="1">
                                                         <t t-foreach="country or []" t-as="c">
                                                             <option t-att-value="c.id">
@@ -181,7 +181,7 @@
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-                                            <select name="fonction_id" t-attf-class="form-control s_website_form_input"
+                                            <select name="fonction_id" t-attf-class="form-select s_website_form_input"
                                                     required="1">
                                                 <t t-foreach="fonctions or []" t-as="f">
                                                     <option t-att-value="f.id">
@@ -237,7 +237,7 @@
                                         </label>
                                         <div class="col-sm">
                                             <select name="type_ecole_id"
-                                                    t-attf-class="form-control s_website_form_input"
+                                                    t-attf-class="form-select s_website_form_input"
                                                     required="1">
                                                 <t t-foreach="type_ecole_ids or []" t-as="t">
                                                     <option t-att-value="t.id">
@@ -259,7 +259,7 @@
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-                                            <select name="niveau_id" t-attf-class="form-control s_website_form_input"
+                                            <select name="niveau_id" t-attf-class="form-select s_website_form_input"
                                                     required="1" id="niveau_select">
                                                 <t t-foreach="niveau_ids or []" t-as="t">
                                                     <option t-att-value="t.id">
@@ -282,7 +282,7 @@
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-                                            <select name="ia_id" t-attf-class="form-control s_website_form_input"
+                                            <select name="ia_id" t-attf-class="form-select s_website_form_input"
                                                     required="1">
                                                 <t t-foreach="ia_ids or []" t-as="t">
                                                     <option t-att-value="t.id">
@@ -304,7 +304,7 @@
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-                                            <select name="ief_id" t-attf-class="form-control s_website_form_input"
+                                            <select name="ief_id" t-attf-class="form-select s_website_form_input"
                                                     required="1">
                                                 <t t-foreach="ief_ids or []" t-as="t">
                                                     <option t-att-value="t.id">
@@ -359,8 +359,8 @@
                                             <span class="s_website_form_mark">*</span>
                                         </label>
                                         <div class="col-sm">
-                                            <select name="type_de_besoins_id"
-                                                    t-attf-class="form-control s_website_form_input"
+                                            <select  name="type_de_besoins_id"
+                                                    t-attf-class="form-select s_website_form_input"
                                                     required="1">
                                                 <t t-foreach="type_besoins_ids or []" t-as="t">
                                                     <option t-att-value="t.id">
